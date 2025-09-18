@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+$verde: #05AF30;
+$verde2: #05E67C;
+$verde3: #64E647;
+$amarelo: #FFDF00;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: white;
+    box-shadow: -6px -5px 27px rgb(200, 200, 200);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 120px;
+        margin-left: 1vw;
+    }
+
+    nav ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: rgb(73, 73, 73);
+        font-weight: bolder;
+    }
+
+    nav ul li{
+        font-size: 12px;
+        margin: 0 2vw 0 2vw;
+    }
+}

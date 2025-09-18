@@ -1,0 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: white;
+  box-shadow: -6px -5px 27px rgb(200, 200, 200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 120px;
+  margin-left: 1vw;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav a {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+  font-weight: bolder;
+}
+header nav ul li {
+  font-size: 12px;
+  margin: 0 2vw 0 2vw;
+}
+
+/*# sourceMappingURL=styles.css.map */
