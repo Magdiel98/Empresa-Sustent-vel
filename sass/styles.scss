@@ -1,42 +1,152 @@
 @charset 'UTF-8';
 
+
 $verde: #05AF30;
 $verde2: #05E67C;
 $verde3: #64E647;
+$verde4: #157347;
 $amarelo: #FFDF00;
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+header {
     background-color: white;
     box-shadow: -6px -5px 27px rgb(200, 200, 200);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    img{
+    img {
         width: 120px;
         margin-left: 1vw;
     }
 
-    nav ul{
+    nav#listanav2 ul {
         display: flex;
         list-style-type: none;
     }
 
-    nav a{
+    nav#listanav2 a {
         text-decoration: none;
         color: rgb(73, 73, 73);
         font-weight: bolder;
     }
 
-    nav ul li{
+    nav#listanav2 ul li {
         font-size: 12px;
-        margin: 0 2vw 0 2vw;
+        margin: 0 1vw 0 1vw;
+    }
+
+
+    #listanav {
+        display: none;
+        position: absolute;
+        top: 14vh;
+        left: 24vw;
+        width: 28vw;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        
+    }
+
+    #listanav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #listanav ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav#listanav a {
+        text-decoration: none;
+        color: rgb(73, 73, 73);
+    }
+
+    nav#listanav a:hover{
+        text-decoration: none;
+        color: $verde;
+    }
+
+    div#busca {
+        display: flex;
+        width: 35vw;
+        margin-right: 1vw;
+    }
+
+    div#listabotao>button {
+        width: 12vw;
+    }
+
+    @media (max-width: 824px) {
+        #listanav2 {
+            display: none;
+        }
+
+        div#busca {
+            display: flex;
+            width: 270px;
+            margin-right: 1vw;
+        }
+
+    }
+
+}
+
+main{
+    div#trabalhadores{
+        background-image: url("../img/trabalhador_placa_solar.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 400px; 
+        width: 100%;
+    }
+
+    div#inicial{
+        background-color: #157347;
+        height: 400px; 
+        width: 100%;
+    }
+
+    div#inicial > h1{
+        color: white;
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 72px;
+    }
+
+    div#inicial > button{
+        position: relative;
+        left: 50%;
+        top: 15%;
+        width: 171px;
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+        color: #0b3a24;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media (min-width: 825px) {
+    #listabotao {
+        display: none;
     }
 }
