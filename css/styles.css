@@ -108,6 +108,111 @@ main div#inicial > button {
   color: #0b3a24;
   transform: translate(-50%, -50%);
 }
+main div#segundaparte {
+  background-color: white;
+  height: 400px;
+  width: 100%;
+}
+main div#segundaparte > h1 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 40px;
+}
+main div#segundaparte li {
+  list-style: none;
+}
+main .container {
+  position: relative;
+  padding: 25px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+main .gallery-wrapper {
+  overflow-x: auto;
+}
+main .gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+main .arrow-left, main .arrow-right {
+  position: absolute;
+  top: 25px;
+  font-size: 30px;
+  line-height: 250px;
+  width: 35px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to left, rgba(21, 115, 71, 0.4039215686), #157347);
+  opacity: 0.5;
+  transition: all 600ms ease-in-out;
+}
+main .arrow-right {
+  left: auto;
+  right: 25px;
+  background: linear-gradient(to left, #157347, rgba(21, 115, 71, 0.4039215686));
+}
+main .arrow-left:hover,
+main .arrow-right:hover {
+  opacity: 1;
+}
+main .item {
+  width: 550px;
+  height: 250px;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: all 600ms ease-in-out;
+}
+main .current-item {
+  opacity: 1;
+}
+main .gallery-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+main .descricao {
+  margin: 5vw;
+}
+main .descricao, main h2, main p {
+  font-family: "Oswald", sans-serif;
+}
+main .descricao > p {
+  text-align: justify;
+}
+@media (min-width: 600px) {
+  main div#primeiraparte {
+    display: flex;
+  }
+  main div#trabalhadores {
+    background-attachment: local;
+  }
+}
+@media (min-width: 680px) {
+  main .descricao {
+    width: 592px;
+    margin: auto;
+  }
+}
+@media (min-width: 980px) {
+  main div#segundaparte ul {
+    display: flex;
+  }
+  main div#segundaparte img {
+    height: 400px;
+  }
+  main .arrow-left, main .arrow-right {
+    top: 110px;
+  }
+  main .arrow-right {
+    right: -1px;
+  }
+  main .arrow-left {
+    left: -1px;
+  }
+}
 
 @media (min-width: 825px) {
   #listabotao {

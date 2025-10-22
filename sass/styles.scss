@@ -142,6 +142,138 @@ main{
         color: #0b3a24;
         transform: translate(-50%, -50%);
     }
+
+    div#segundaparte{
+        background-color: white;
+        height: 400px; 
+        width: 100%;
+    }
+
+    div#segundaparte > h1{
+        font-family: "Oswald", sans-serif;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 40px;
+    }
+
+    div#segundaparte li{
+        list-style: none;
+    }
+
+    .container{
+        position: relative;
+        padding: 25px;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    .gallery-wrapper{
+        overflow-x: auto;
+    }
+
+    .gallery{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 15px;
+    }
+
+    .arrow-left, .arrow-right{
+        position: absolute;
+        top: 25px;
+        font-size: 30px;
+        line-height: 250px;
+        width: 35px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        background: linear-gradient(to left, #15734767, #157347);
+        opacity: 0.5;
+        transition: all 600ms ease-in-out;
+    }
+
+    .arrow-right{
+        left: auto;
+        right: 25px;
+        background: linear-gradient(to left, #157347, #15734767);
+    }
+
+    .arrow-left:hover,
+    .arrow-right:hover{
+        opacity: 1;
+    }
+
+    .item{
+        width: 550px;
+        height: 250px;
+        flex-shrink: 0;
+        opacity: 0.6;
+        transition: all 600ms ease-in-out;
+    }
+
+    .current-item{
+        opacity: 1;
+    }
+
+    .gallery-wrapper{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .descricao{
+        margin: 5vw;
+    }
+    
+    .descricao, h2, p{
+       font-family: "Oswald", sans-serif;
+    }
+
+    .descricao > p{
+        text-align: justify;
+    }
+
+    @media (min-width: 600px)
+    {
+    
+
+        div#primeiraparte{
+            display: flex;
+        }
+
+        div#trabalhadores{
+            background-attachment: local;
+        }
+    }
+
+    @media (min-width: 680px){
+        .descricao{
+            width: 592px;
+            margin: auto;
+        }
+    }
+
+     @media (min-width: 980px)
+    {
+        div#segundaparte ul{
+            display: flex;
+        }
+        
+        div#segundaparte img{
+            height: 400px;
+        }
+        .arrow-left, .arrow-right{
+            top: 110px;
+        }
+        .arrow-right{
+            right: -1px;
+        }
+        .arrow-left{
+            left: -1px;
+        }
+
+    }
+
+
 }
 
 
