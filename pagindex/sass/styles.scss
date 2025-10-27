@@ -19,112 +19,31 @@ $amarelo: #FFDF00;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    background-color: white;
-    box-shadow: -6px -5px 27px rgb(200, 200, 200);
+
+
+main {
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 
-    img {
-        width: 120px;
-        margin-left: 1vw;
-    }
-
-    nav#listanav2 ul {
-        display: flex;
-        list-style-type: none;
-    }
-
-    nav#listanav2 a {
-        text-decoration: none;
-        color: rgb(73, 73, 73);
-        font-weight: bolder;
-    }
-
-    nav#listanav2 ul li {
-        font-size: 12px;
-        margin: 0 1vw 0 1vw;
-    }
-
-
-    #listanav {
-        display: none;
-        position: absolute;
-        top: 14vh;
-        left: 24vw;
-        width: 28vw;
-        background: white;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        
-    }
-
-    #listanav ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    #listanav ul li {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    nav#listanav a {
-        text-decoration: none;
-        color: rgb(73, 73, 73);
-    }
-
-    nav#listanav a:hover{
-        text-decoration: none;
-        color: $verde;
-    }
-
-    div#busca {
-        display: flex;
-        width: 35vw;
-        margin-right: 1vw;
-    }
-
-    div#listabotao>button {
-        width: 12vw;
-    }
-
-    @media (max-width: 824px) {
-        #listanav2 {
-            display: none;
-        }
-
-        div#busca {
-            display: flex;
-            width: 270px;
-            margin-right: 1vw;
-        }
-
-    }
-
-}
-
-main{
-    div#trabalhadores{
+    div#trabalhadores {
         background-image: url("../img/trabalhador_placa_solar.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        height: 400px; 
+        height: 400px;
         width: 100%;
     }
 
-    div#inicial{
+    div#inicial {
         background-color: #157347;
-        height: 400px; 
+        height: 400px;
         width: 100%;
     }
 
-    div#inicial > h1{
+    .partes>h1,
+    .partes>h2 {
         color: white;
         font-family: "Oswald", sans-serif;
         font-size: 50px;
@@ -132,7 +51,7 @@ main{
         padding-top: 72px;
     }
 
-    div#inicial > button{
+    div#inicial>button {
         position: relative;
         left: 50%;
         top: 15%;
@@ -143,41 +62,43 @@ main{
         transform: translate(-50%, -50%);
     }
 
-    div#segundaparte{
+    div#segundaparte {
         background-color: white;
-        height: 400px; 
+        min-height: 400px;
         width: 100%;
     }
 
-    div#segundaparte > h1{
+    div#segundaparte>h1 {
         font-family: "Oswald", sans-serif;
         text-align: center;
         margin-top: 60px;
         font-size: 40px;
     }
 
-    div#segundaparte li{
+
+    div#segundaparte li {
         list-style: none;
     }
 
-    .container{
+    .container {
         position: relative;
         padding: 25px;
         max-width: 640px;
-        margin: 0 auto;
+        margin: auto;
     }
 
-    .gallery-wrapper{
+    .gallery-wrapper {
         overflow-x: auto;
     }
 
-    .gallery{
+    .gallery {
         display: flex;
         flex-flow: row nowrap;
         gap: 15px;
     }
 
-    .arrow-left, .arrow-right{
+    .arrow-left,
+    .arrow-right {
         position: absolute;
         top: 25px;
         font-size: 30px;
@@ -192,18 +113,18 @@ main{
         transition: all 600ms ease-in-out;
     }
 
-    .arrow-right{
+    .arrow-right {
         left: auto;
         right: 25px;
         background: linear-gradient(to left, #157347, #15734767);
     }
 
     .arrow-left:hover,
-    .arrow-right:hover{
+    .arrow-right:hover {
         opacity: 1;
     }
 
-    .item{
+    .item {
         width: 550px;
         height: 250px;
         flex-shrink: 0;
@@ -211,63 +132,141 @@ main{
         transition: all 600ms ease-in-out;
     }
 
-    .current-item{
+    .current-item {
         opacity: 1;
     }
 
-    .gallery-wrapper{
+    .gallery-wrapper {
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
 
-    .descricao{
+    .descricao {
         margin: 5vw;
     }
-    
-    .descricao, h2, p{
-       font-family: "Oswald", sans-serif;
+
+    .descricao h2,
+    .descricao p {
+        font-family: "Oswald", sans-serif;
     }
 
-    .descricao > p{
+
+    .descricao>p {
         text-align: justify;
     }
 
-    @media (min-width: 600px)
-    {
-    
 
-        div#primeiraparte{
+    div#sobre {
+        background-color: #157347;
+        min-height: 400px;
+        width: 100%;
+        padding: 20px;
+    }
+
+
+
+    div#terceiraparte>.partes>p {
+        color: white;
+        text-align: justify;
+        font-size: 20px;
+        font-family: "Oswald", sans-serif;
+        margin: 40px auto 40px auto;
+    }
+
+     div#quartaparte > h1 {
+        font-family: "Oswald", sans-serif;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 40px;
+    }
+
+    div#quartaparte > div#valores{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    div#valores > div{
+        display: inline-block;
+        border-radius: 3%;
+        min-width: 180px;
+        min-height: 165px;
+        box-shadow: -2px 5px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .valor{
+        width: 223px;
+        margin: 10px;
+        padding: 2px;
+    }
+
+    div#quartaparte > div#valores img{
+        width: 220px;
+        border-radius: 10px;
+    }
+
+
+    div#quartaparte > div#valores h2{
+        margin-top: 10px;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+    }
+
+    div#quartaparte > div#valores p{
+        text-align: justify;
+        font-family: "Oswald", sans-serif;
+        font-size: 15px;
+    }
+
+    div#quartaparte{
+        margin-bottom: 100px;
+    }
+
+    @media (min-width: 600px) {
+
+
+        div#primeiraparte {
             display: flex;
         }
 
-        div#trabalhadores{
+        div#trabalhadores {
             background-attachment: local;
         }
     }
 
-    @media (min-width: 680px){
-        .descricao{
+    @media (min-width: 680px) {
+        .descricao {
             width: 592px;
             margin: auto;
         }
     }
 
-     @media (min-width: 980px)
-    {
-        div#segundaparte ul{
+    @media (min-width: 900px) {
+        div#terceiraparte>.partes>p {
+            width: 720px;
+        }
+    }
+
+    @media (min-width: 980px) {
+        div#segundaparte ul {
             display: flex;
         }
-        
-        div#segundaparte img{
+
+        div#segundaparte img {
             height: 400px;
         }
-        .arrow-left, .arrow-right{
+
+        .arrow-left,
+        .arrow-right {
             top: 110px;
         }
-        .arrow-right{
+
+        .arrow-right {
             right: -1px;
         }
-        .arrow-left{
+
+        .arrow-left {
             left: -1px;
         }
 
@@ -276,9 +275,3 @@ main{
 
 }
 
-
-@media (min-width: 825px) {
-    #listabotao {
-        display: none;
-    }
-}

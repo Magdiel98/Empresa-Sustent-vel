@@ -6,77 +6,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-  background-color: white;
-  box-shadow: -6px -5px 27px rgb(200, 200, 200);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header img {
-  width: 120px;
-  margin-left: 1vw;
-}
-header nav#listanav2 ul {
-  display: flex;
-  list-style-type: none;
-}
-header nav#listanav2 a {
-  text-decoration: none;
-  color: rgb(73, 73, 73);
-  font-weight: bolder;
-}
-header nav#listanav2 ul li {
-  font-size: 12px;
-  margin: 0 1vw 0 1vw;
-}
-header #listanav {
-  display: none;
-  position: absolute;
-  top: 14vh;
-  left: 24vw;
-  width: 28vw;
-  background: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-header #listanav ul {
-  list-style: none;
+main {
   display: flex;
   flex-direction: column;
-  padding: 10px;
 }
-header #listanav ul li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-header nav#listanav a {
-  text-decoration: none;
-  color: rgb(73, 73, 73);
-}
-header nav#listanav a:hover {
-  text-decoration: none;
-  color: #05AF30;
-}
-header div#busca {
-  display: flex;
-  width: 35vw;
-  margin-right: 1vw;
-}
-header div#listabotao > button {
-  width: 12vw;
-}
-@media (max-width: 824px) {
-  header #listanav2 {
-    display: none;
-  }
-  header div#busca {
-    display: flex;
-    width: 270px;
-    margin-right: 1vw;
-  }
-}
-
 main div#trabalhadores {
   background-image: url("../img/trabalhador_placa_solar.jpg");
   background-position: center center;
@@ -91,7 +24,8 @@ main div#inicial {
   height: 400px;
   width: 100%;
 }
-main div#inicial > h1 {
+main .partes > h1,
+main .partes > h2 {
   color: white;
   font-family: "Oswald", sans-serif;
   font-size: 50px;
@@ -110,7 +44,7 @@ main div#inicial > button {
 }
 main div#segundaparte {
   background-color: white;
-  height: 400px;
+  min-height: 400px;
   width: 100%;
 }
 main div#segundaparte > h1 {
@@ -126,7 +60,7 @@ main .container {
   position: relative;
   padding: 25px;
   max-width: 640px;
-  margin: 0 auto;
+  margin: auto;
 }
 main .gallery-wrapper {
   overflow-x: auto;
@@ -136,7 +70,8 @@ main .gallery {
   flex-flow: row nowrap;
   gap: 15px;
 }
-main .arrow-left, main .arrow-right {
+main .arrow-left,
+main .arrow-right {
   position: absolute;
   top: 25px;
   font-size: 30px;
@@ -176,11 +111,66 @@ main .gallery-wrapper {
 main .descricao {
   margin: 5vw;
 }
-main .descricao, main h2, main p {
+main .descricao h2,
+main .descricao p {
   font-family: "Oswald", sans-serif;
 }
 main .descricao > p {
   text-align: justify;
+}
+main div#sobre {
+  background-color: #157347;
+  min-height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+main div#terceiraparte > .partes > p {
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  margin: 40px auto 40px auto;
+}
+main div#quartaparte > h1 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 40px;
+}
+main div#quartaparte > div#valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main div#valores > div {
+  display: inline-block;
+  border-radius: 3%;
+  min-width: 180px;
+  min-height: 165px;
+  box-shadow: -2px 5px 16px 0px rgba(0, 0, 0, 0.2);
+}
+main .valor {
+  width: 223px;
+  margin: 10px;
+  padding: 2px;
+}
+main div#quartaparte > div#valores img {
+  width: 220px;
+  border-radius: 10px;
+}
+main div#quartaparte > div#valores h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+main div#quartaparte > div#valores p {
+  text-align: justify;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+}
+main div#quartaparte {
+  margin-bottom: 100px;
 }
 @media (min-width: 600px) {
   main div#primeiraparte {
@@ -196,6 +186,11 @@ main .descricao > p {
     margin: auto;
   }
 }
+@media (min-width: 900px) {
+  main div#terceiraparte > .partes > p {
+    width: 720px;
+  }
+}
 @media (min-width: 980px) {
   main div#segundaparte ul {
     display: flex;
@@ -203,7 +198,8 @@ main .descricao > p {
   main div#segundaparte img {
     height: 400px;
   }
-  main .arrow-left, main .arrow-right {
+  main .arrow-left,
+  main .arrow-right {
     top: 110px;
   }
   main .arrow-right {
@@ -214,10 +210,5 @@ main .descricao > p {
   }
 }
 
-@media (min-width: 825px) {
-  #listabotao {
-    display: none;
-  }
-}
 
 /*# sourceMappingURL=styles.css.map */

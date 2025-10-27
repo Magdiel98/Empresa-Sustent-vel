@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: white;
+  box-shadow: -6px -5px 27px rgb(200, 200, 200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 120px;
+  margin-left: 1vw;
+}
+header nav#listanav2 ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav#listanav2 a {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+  font-weight: bolder;
+}
+header nav#listanav2 ul li {
+  font-size: 12px;
+  margin: 0 1vw 0 1vw;
+}
+header #listanav {
+  display: none;
+  position: absolute;
+  top: 14vh;
+  left: 24vw;
+  width: 28vw;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+header #listanav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+header #listanav ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+header nav#listanav a {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+}
+header nav#listanav a:hover {
+  text-decoration: none;
+  color: #05AF30;
+}
+header div#busca {
+  display: flex;
+  width: 35vw;
+  margin-right: 1vw;
+}
+header div#listabotao > button {
+  width: 12vw;
+}
+@media (max-width: 824px) {
+  header #listanav2 {
+    display: none;
+  }
+  header div#busca {
+    display: flex;
+    width: 270px;
+    margin-right: 1vw;
+  }
+}
+
+
+@media (min-width: 825px) {
+  #listabotao {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #157347;
+  min-height: 160px;
+  width: 100%;
+  padding: 20px;
+}
+footer p {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-align: center;
+  top: 55px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: white;
+    box-shadow: -6px -5px 27px rgb(200, 200, 200);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 120px;
+        margin-left: 1vw;
+    }
+
+    nav#listanav2 ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav#listanav2 a {
+        text-decoration: none;
+        color: rgb(73, 73, 73);
+        font-weight: bolder;
+    }
+
+    nav#listanav2 ul li {
+        font-size: 12px;
+        margin: 0 1vw 0 1vw;
+    }
+
+
+    #listanav {
+        display: none;
+        position: absolute;
+        top: 14vh;
+        left: 24vw;
+        width: 28vw;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+
+    }
+
+    #listanav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #listanav ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav#listanav a {
+        text-decoration: none;
+        color: rgb(73, 73, 73);
+    }
+
+    nav#listanav a:hover {
+        text-decoration: none;
+        color: $verde;
+    }
+
+    div#busca {
+        display: flex;
+        width: 35vw;
+        margin-right: 1vw;
+    }
+
+    div#listabotao>button {
+        width: 12vw;
+    }
+
+    @media (max-width: 824px) {
+        #listanav2 {
+            display: none;
+        }
+
+        div#busca {
+            display: flex;
+            width: 270px;
+            margin-right: 1vw;
+        }
+
+    }
+
+}
+
+@media (min-width: 825px) {
+    #listabotao {
+        display: none;
+    }
+}
+
+footer{
+
+    background-color: #157347;
+    min-height: 160px;
+    width: 100%;
+    padding: 20px;
+
+    p{
+        position: relative;
+        font-family: "Oswald", sans-serif;
+        color: white;
+        text-align: center;
+        top: 55px;
+    }
+    
+}
