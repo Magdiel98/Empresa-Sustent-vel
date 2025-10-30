@@ -17,3 +17,54 @@ $amarelo: #FFDF00;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 550px;
+
+    div#formulario>form>p>label,
+    input,
+    textarea,
+    button {
+        font-family: "Oswald", sans-serif;
+        font-size: 18px;
+    }
+
+    div#formulario {
+        position: relative;
+        top: 75px;
+        background-color: #F4F4F4;
+        margin: auto;
+        width: 45vw;
+        padding: 12px;
+        box-shadow: 1px 3px 18px 0px #c5c5c5;
+    }
+
+    div#formulario > form > p, button{
+        width: 425px;
+        margin: auto;
+    }
+
+    div#formulario > form > button{
+        margin-top: 10px;
+    }
+
+    div#formulario > form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe{
+        position: relative;
+        width: 90vw;
+        margin: auto;
+        top: 160px;
+    }
+
+    @media (max-width: 1058px) {
+        div#formulario {
+            width: 462px;
+        }
+    }
+
+}

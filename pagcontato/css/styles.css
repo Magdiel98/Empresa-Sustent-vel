@@ -6,5 +6,48 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+}
+main div#formulario > form > p > label,
+main input,
+main textarea,
+main button {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+main div#formulario {
+  position: relative;
+  top: 75px;
+  background-color: #F4F4F4;
+  margin: auto;
+  width: 45vw;
+  padding: 12px;
+  box-shadow: 1px 3px 18px 0px #c5c5c5;
+}
+main div#formulario > form > p, main button {
+  width: 425px;
+  margin: auto;
+}
+main div#formulario > form > button {
+  margin-top: 10px;
+}
+main div#formulario > form {
+  display: flex;
+  flex-direction: column;
+}
+main iframe {
+  position: relative;
+  width: 90vw;
+  margin: auto;
+  top: 160px;
+}
+@media (max-width: 1058px) {
+  main div#formulario {
+    width: 462px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
