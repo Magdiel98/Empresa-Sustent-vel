@@ -16,6 +16,69 @@ $amarelo: #FFDF00;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
+main {
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+
+    div.card {
+        margin: 110px 0 -92px 0;
+    }
+
+    .verificado {
+        color: green;
+    }
+
+    .naoverificado {
+        color: red;
+    }
+
+    div#basico {
+        background-color: #05E67C;
+        color: white;
+    }
+
+    div#padrao {
+        background-color: #09be6a;
+        color: white;
+    }
+
+    div#premium {
+        background-color: #078047;
+        color: white;
+    }
+
+    .botaocard {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media(min-width: 880px) {
+        width: 98vw
+    }
+
+    @media(min-width: 925px) {
+        flex-direction: row;
+
+        div.card {
+            margin-bottom: -170px;
+        }
+    }
+
+    @media(min-width: 950px) {
+        width: 97vw;
+    }
+
+
+    @media(min-width: 1120px) {
+        width: 79vw;
+    }
+
+
+}

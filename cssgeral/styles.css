@@ -91,18 +91,23 @@ footer {
   justify-content: center;
   margin-top: 290px;
 }
-footer p#sociais > i {
+footer p#sociais a i {
   margin: 1vw;
 }
 footer p#contato a,
-footer span {
+footer p#contato span {
   font-family: "Oswald", sans-serif;
   color: white;
   text-align: center;
   text-decoration: none;
   margin: 2vw;
 }
-footer p#contato a:hover {
+footer p#sociais a i {
+  color: white;
+  text-decoration: none;
+}
+footer p#contato a:hover,
+footer p#sociais a:hover > i {
   color: #05AF30;
 }
 footer p {

@@ -6,5 +6,60 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main div.card {
+  margin: 110px 0 -92px 0;
+}
+main .verificado {
+  color: green;
+}
+main .naoverificado {
+  color: red;
+}
+main div#basico {
+  background-color: #05E67C;
+  color: white;
+}
+main div#padrao {
+  background-color: #09be6a;
+  color: white;
+}
+main div#premium {
+  background-color: #078047;
+  color: white;
+}
+main .botaocard {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 880px) {
+  main {
+    width: 98vw;
+  }
+}
+@media (min-width: 925px) {
+  main {
+    flex-direction: row;
+  }
+  main div.card {
+    margin-bottom: -170px;
+  }
+}
+@media (min-width: 950px) {
+  main {
+    width: 97vw;
+  }
+}
+@media (min-width: 1120px) {
+  main {
+    width: 79vw;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

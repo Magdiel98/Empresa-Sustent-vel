@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 $verde: #05AF30;
@@ -116,12 +116,12 @@ footer {
     justify-content: center;
     margin-top: 290px;
 
-    p#sociais>i {
+    p#sociais a  i {
         margin: 1vw;
     }
 
     p#contato a,
-    span {
+    p#contato span {
         font-family: "Oswald", sans-serif;
         color: white;
         text-align: center;
@@ -129,8 +129,13 @@ footer {
         margin: 2vw;
     }
 
+    p#sociais a  i{
+        color: white;
+        text-decoration: none;
+    }
 
-    p#contato a:hover {
+    p#contato a:hover,
+    p#sociais a:hover > i{
         color: #05AF30;
     }
 

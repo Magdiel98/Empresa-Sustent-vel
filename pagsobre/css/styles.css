@@ -6,5 +6,55 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 120px;
+}
+main div#imagem > img {
+  width: 430px;
+  margin-top: 85px;
+}
+main #imagem img {
+  transition: opacity 1s ease-in-out;
+}
+main div#texto {
+  padding: 1em;
+}
+main div#texto > p {
+  text-align: justify;
+  font-size: 3.5vw;
+  font-family: "Oswald", sans-serif;
+}
+@media (min-width: 560px) {
+  main div#texto > p {
+    text-align: justify;
+    font-size: 18px;
+  }
+}
+@media (min-width: 730px) {
+  main div#texto {
+    margin: auto;
+    width: 650px;
+  }
+}
+@media (min-width: 900px) {
+  main {
+    flex-direction: row;
+  }
+  main div#imagem > img {
+    width: 430px;
+    margin-top: -42px;
+    margin-left: 4em;
+  }
+}
+@media (max-width: 900px) {
+  main {
+    position: relative;
+    top: 50px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

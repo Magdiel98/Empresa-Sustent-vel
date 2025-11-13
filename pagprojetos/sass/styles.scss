@@ -16,6 +16,45 @@ $amarelo: #FFDF00;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
+main{
+    
+    margin-bottom: -130px;
+    position: relative;
+
+    h1{
+        margin-top: 100px;
+        font-size: 50px;
+    }
+    
+    h1, h2{
+        color: #333333;
+    }
+
+    select#projetos{
+        position: absolute;
+        right: 20px;
+        top: -55px;
+        width: 195px;
+    }
+
+    div#galeria{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div.imagens{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    div.imagens > img{
+        width: 230px;
+        height: 195px;
+        margin-bottom: 10px;
+    }
+    
+}

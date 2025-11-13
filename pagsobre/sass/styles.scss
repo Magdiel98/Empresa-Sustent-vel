@@ -19,3 +19,64 @@ $amarelo: #FFDF00;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 120px;
+
+    div#imagem>img {
+        width: 430px;
+        margin-top: 85px;
+    }
+
+    #imagem img {
+        transition: opacity 1s ease-in-out;
+    }
+
+    div#texto {
+        padding: 1em;
+    }
+
+    div#texto>p {
+        text-align: justify;
+        font-size: 3.5vw;
+        font-family: "Oswald", sans-serif;
+    }
+
+    
+
+    @media (min-width: 560px) {
+        div#texto>p {
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+
+    @media(min-width: 730px) {
+        div#texto {
+            margin: auto;
+            width: 650px;
+        }
+    }
+
+    @media(min-width: 900px) {
+        flex-direction: row;
+
+        div#imagem>img {
+            width: 430px;
+            margin-top: -42px;
+            margin-left: 4em
+        }
+    }
+
+    @media(max-width: 900px) {
+        position: relative;
+        top: 50px;
+
+    }
+}
+
+
